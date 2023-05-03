@@ -1,0 +1,21 @@
+Package: PortfolioConstituents
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person("Mulazim-Ali", "KHOKHAR", , "mulazim.ali.khokhar@vub.be", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9845-8519"))
+Description: What the package does (The package is build to convert constituents of an index or a portfolio provided by Refinitiv/CRSP to times series of dummies in xts-format. The Refinitiv data has/should have three variables named: 'in_out' (Showing "+" for securities when included in the portfolio and "-" when excluded), 'RIC' codes which identify each constituent of the portfolio distinctively and 'date' variable that records date of inclusion or exclusion when read in conjunction with in_out for corresponding security. The CRSP data also has three variable: the ID as gvkey or ticker, date_in and date_out).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    dplyr,
+    lubridate,
+    stringr,
+    vetr,
+    xts
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
